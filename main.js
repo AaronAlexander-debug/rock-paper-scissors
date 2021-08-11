@@ -1,3 +1,5 @@
+/* Randomization of computer's choices */
+
 function computerPlay() {
     var playArray = [
        "Rock",
@@ -7,9 +9,14 @@ function computerPlay() {
     var randomNumber = Math.floor(Math.random()*playArray.length);
     return playArray[randomNumber];
 }
+
+/* The user playing a round of rock, paper, scissors */
+
 function playRound(playerSelection, computerSelection) {
     var x = playerSelection.toUpperCase();
     var y = computerSelection.toUpperCase();
+
+/* The rock, paper, scissors event chain */
 
 if (x == "ROCK" && y == "SCISSORS") {
     return "You Win! Rock beats Scissors!";
